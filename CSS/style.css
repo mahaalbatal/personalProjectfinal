@@ -7,12 +7,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     background-color: white;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5); 
-    padding: 0 50px; 
+    padding: 0 40px; 
     font-size: 30px;
     height: 70px;
-    margin: 40px;
+    margin: 50px;
+    gap: 40px;
 }
 .cart{
     position: relative;
@@ -28,7 +30,10 @@
     border-radius: 5px;
     padding: 3px; 
 }
-.nav1{
+.nav{
     display: flex;
-    gap: 40px;
+    gap: 30px;
+}
+.name{
+    font-size: 14px;
 }
