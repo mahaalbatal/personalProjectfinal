@@ -7,13 +7,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: white;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5); 
     padding: 0 40px; 
     font-size: 30px;
-    height: 70px;
-    margin: 50px;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
     gap: 40px;
 }
 .cart{
@@ -36,4 +37,57 @@
 }
 .name{
     font-size: 14px;
+}
+
+/* first bar style */
+.mainbar{
+    display: flex;
+    align-items: center;
+    gap: 450px;
+    margin-top: 10px;
+    margin-left: 100px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+.name1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Gallery items style  */
+.shop{
+    display: grid;
+    grid-template-columns: repeat(5, 220px);
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20PX;
+}
+.item{
+    /* border: 2px solid black; */
+    background-color: beige;
+    padding: 14px;
+    padding-bottom: 0px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 0px;
+    gap: 2px;
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    gap: 8px;
+    font-size: 18px;
+}
+.bi-dash-lg{
+    color: red;
+}
+.bi-plus-lg{
+    color: green;
 }
