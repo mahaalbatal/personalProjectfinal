@@ -55,11 +55,11 @@
 }
 
 /* Gallery items style  */
-.mainshop{
+/* .mainshop{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 .shop{
     display: grid;
     grid-template-columns: repeat(5, 220px);

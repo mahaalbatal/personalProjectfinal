@@ -64,13 +64,13 @@
 
                     <div class="cart">
                         <i class="bi bi-cart3"></i>
-                        <div class="cartamount">0</div>
+                        <div id="cartAmount" class="cartamount">0</div>
                     </div>
 
     </div>
 
-<div class="mainshop" id="shop">
-    <div class="shop">
+<!-- <div class="mainshop" id="mainshop"> -->
+    <div class="shop" id="shop">
             <div class="item">
                     <img width="190" height="185" src="images/Screenshot_20231024_220005_WhatsApp.jpg" alt="">
                     <div class="details">
@@ -81,7 +81,7 @@
                                 <div class="buttons">
                                     <i class="bi bi-dash-lg"></i>
                                     <div class="quantity">0</div>
-                                    <i class="bi bi-plus-lg"></i>
+                                    <i class="bi bi-plus-lg" onclick="handelAddToCart(this.id)"></i>
 
                                 </div>
                             </div>
@@ -161,14 +161,14 @@
 
 
 
-    <div class="shop">
+    <div class="shop" id="shop">
         <div class="item">
                 <img width="190" height="185"  src="images/Screenshot_20231024_215825_WhatsApp.jpg" alt="">
                 <div class="details">
-                        <h2>C'bites</h2>
-                        <p>A blend of kinder chocolate and white chocolate</p>
+                        <h2>F'bites</h2>
+                        <p>Flakes dipped in caramel and chocolate</p>
                         <div class="price-quantity">
-                            <h3>$ 20</h3>
+                            <h3>$ 16</h3>
                             <div class="buttons">
                                 <i class="bi bi-dash-lg"></i>
                                 <div class="quantity">0</div>
@@ -183,8 +183,8 @@
         <div class="item">
             <img width="190" height="185"  src="images/Screenshot_20231024_215847_WhatsApp.jpg" alt="">
             <div class="details">
-                    <h2>M'bites</h2>
-                    <p>Nutella filled lotus n chocolate mini cupcakes</p>
+                    <h2>L'bites</h2>
+                    <p>Biscuit mixed with lotus creamy biscuit spread</p>
                     <div class="price-quantity">
                         <h3>$ 20</h3>
                         <div class="buttons">
@@ -200,8 +200,8 @@
         <div class="item">
             <img width="190" height="185"  src="images/tempFileForShare_20231024-190744.jpg" alt="">
             <div class="details">
-                    <h2>W'bites</h2>
-                    <p>A mix of white chocolate and coconut</p>
+                    <h2>P'bites</h2>
+                    <p>Peanut butter plunged in choclate</p>
                     <div class="price-quantity">
                         <h3>$ 20</h3>
                         <div class="buttons">
@@ -217,10 +217,10 @@
         <div class="item">
             <img width="190" height="185"  src="images/Screenshot_20231024_215741_WhatsApp.jpg" alt="">
             <div class="details">
-                    <h2>K'bites</h2>
-                    <p>Crunchy kunafa topped with lotus creamy biscuit spread</p>
+                    <h2>O'bites</h2>
+                    <p> Oreo cookies dipped in chocolate</p>
                     <div class="price-quantity">
-                        <h3>$ 30</h3>
+                        <h3>$ 20</h3>
                         <div class="buttons">
                             <i class="bi bi-dash-lg"></i>
                             <div class="quantity">0</div>
@@ -249,9 +249,9 @@
         </div>
 
     </div>
-</div>
+<!-- </div> -->
 
 
 </body>
-<!-- <script src="JS/main.js"></script> -->
+<script src="JS/main.js"></script>
 </html>
