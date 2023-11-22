@@ -20,6 +20,7 @@
 .cart{
     position: relative;
     padding: 5px;
+    list-style-type: none;
 }
 .cartamount{
     position: absolute;
@@ -30,6 +31,9 @@
     color: white;
     border-radius: 5px;
     padding: 3px; 
+}
+.nav1{
+    list-style-type: none;
 }
 .nav{
     display: flex;
