@@ -32,7 +32,7 @@
     border-radius: 5px;
     padding: 3px; 
 }
-.nav1{
+.nav > li {
     list-style-type: none;
 }
 .nav{
