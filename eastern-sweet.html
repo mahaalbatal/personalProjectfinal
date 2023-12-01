@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/slideshow.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="mainbar">
+
+        <div class="loc">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div class="name1">Oakville</div>
+        </div>
+
+        <div class="logo">
+            <img width="120" src="images/Picture1.png" alt="logo">
+        </div>
+        
+    </header>
+
+
+
+    <nav class="navbar">
+
+        
+        <ul class="nav">
+
+                <li>
+                        <i class="bi bi-house-heart"></i>
+                        <div class="name">Home</div>
+                </li>
+
+                <li>
+                    <i class="bi bi-images"></i>
+                    <div class="name">Gallery</div>
+                </li>
+
+                <li>
+                    <i class="bi bi-gift"></i>
+                    <div class="name">Offers</div>
+                </li>
+                        
+                <li>
+                    <i class="bi bi-emoji-smile"></i>
+                    <div class="name">Reviews</div>
+                </li>
+                    
+                <li>
+                    <i class="bi bi-calendar-event"></i>
+                    <div class="name">Offers</div>
+                </li>
+                    
+                <li>
+                    <i class="bi bi-person-circle"></i>
+                    <div class="name">Profile</div>
+                </li>
+                
+            
+            </ul>
+            <ul>
+        <li class="cart">
+            <i class="bi bi-cart3"></i>
+            <div id="cartAmount" class="cartamount">0</div>
+        </li>
+            </ul>
+    </nav>
+
+
+
+    <div class="w3-content" style="max-width:1200px">
+        <img class="mySlides" src="images/Screenshot_20231024_215741_WhatsApp.jpg" style="width:100%;display:none">
+        <img class="mySlides" src="images/Screenshot_20231024_215825_WhatsApp.jpg" style="width:100%">
+        <img class="mySlides" src="images/Screenshot_20231024_215847_WhatsApp.jpg" style="width:100%;display:none">
+      
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/Screenshot_20231024_215741_WhatsApp.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/Screenshot_20231024_215825_WhatsApp.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="images/Screenshot_20231024_215847_WhatsApp.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+          </div>
+        </div>
+      </div>
+    
+   
+    </body>
+    <script src="JS/slideshow.js"></script>
+    </html>
+    

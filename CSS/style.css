@@ -59,11 +59,7 @@
 }
 
 /* Gallery items style  */
-/* .mainshop{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+
 .shop{
     display: grid;
     grid-template-columns: repeat(5, 220px);
@@ -165,3 +161,80 @@ input[type=date]{
     font-weight: bold;
     margin-left: 100px;
 }
+
+/* index page style */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap:60px;
+}
+.account{
+    width: 50px;
+    height: 50px;
+}
+.chocolate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.types{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+.popular{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: beige;
+    height: 300px;
+    width: 800px;
+    margin: 10px;
+    gap: 10px;
+}
+.popularitem{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+.populardetails{
+    display: flex;
+    gap: 100px;
+} 
+.popularphoto{
+    /* display: flex;
+    align-items: center; */
+    width: 200px;
+    height: 220px;
+    margin-top: 0px;
+}
+.populartitle{
+    /* margin-left: 180px; */
+    display: flex;
+    font-size: 22px;
+    justify-content: left;
+}
+.photobackground{
+    /* display: flex;
+    align-items: center; */
+    width: 500px;
+    height: 220px;
+    background-color:  rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+}
+.populardetails1{
+    font-size: 20px;
+}
+.populardetails2{
+    font-size: 14px;
+    color: gray;
+} 
