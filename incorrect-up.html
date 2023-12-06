@@ -23,19 +23,20 @@
                     <h2 class="ti2">Sweets & Bakes </h2>
                     <h3 class="ti3">Incorrect user name or password</h3>
 
-                    <form action="///////////" method="POST">
-                            <label class="fb1">Log In</label>
-                            <input id="us" class="fb1" name="userName" type="text" placeholder="email" required>
-                            <input id="ps" class="fb1" name="passWord" type="text" placeholder="********                  Password" required>
-                
-                        <div class="rp">
-                                <button class="bu" type="button" onclick= "href='index.html'">Log In</button>
-                                <button class="bu" type="button" onclick= "href='Home.html'">Creat Account</button>
+                    <form action="PHP/index.php" method="POST">
+                        <label class="fb1">Log In</label>
+                        <input id="us" class="fb1" name="username" type="text" placeholder="email">
+                        <input id="ps" class="fb1" name="password" type="text" placeholder="********                  Password">
+            
+                    <div class="rp">
+
+                            <button class="bu" type="submit"> Log In </button>
+                            <a href="create-account.html"><button class="bu" type="button">Creat Account </button></a> 
+                        </div>
+                            
+                            <div>
+                                <a class="fb1" href="Reset Password.html"> Forgot Password</a>
                             </div>
-                                
-                                <div>
-                                    <a class="fb1" href="Reset Password.html"> Forgot Password</a>
-                                </div>
                         
 
 
@@ -48,4 +49,3 @@
 
 
 
-       

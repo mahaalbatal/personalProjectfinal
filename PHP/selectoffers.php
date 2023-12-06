@@ -14,14 +14,6 @@
     $stmt->execute();
     
     //process results
-    ?><ul><?php
-    while($row = $stmt->fetch()) {     
-        ?><li><?=$row["offerId"] ?> <?=$row["start"] ?> <?=$row["end"] ?> <?=$row["offer"] ?> 
-        <a href="editoffers.php/?offerId=<?=$row["offerId"]?>">Edit</a> 
-        <a href="deleteoffers-confirmation.php/?offerId=<?=$row["offerId"]?>">Delete</a>
-    
-        </li><?php
-    }
-    ?></ul><?php
-
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	echo(json_encode($results)); 
     ?>

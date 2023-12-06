@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>Offers Form</title>
+    <title>Offers</title>
 </head>
 <body>
 
     
-    <header class="mainbar">
+    <!-- <header class="mainbar">
 
         <div class="loc">
             <i class="bi bi-geo-alt-fill"></i>
@@ -68,12 +68,12 @@
                     <div id="cartAmount" class="cartamount">0</div>
                 </li>
                     </ul>
-            </nav>
+            </nav> -->
 
 
 
 
-            <form class="offers" action="PHP/insertoffers.php" method="POST">
+            <form id="offers" class="offers" action="insertoffers.php" method="POST">
 
                 <div class="offers1">
                         <label for="">Start from</label>
@@ -89,13 +89,13 @@
                 
 
             </form>
-                    <button id="loadoffers" class="oldoffers" type="submit" onclick="window.location.href='PHP/selectoffers.php'">load old offers</button>
+                    <button id="loadoffers" class="oldoffers" type="submit" >load old offers</button>
 
                     <!-- <button id="loadoffers" class="oldoffers" type="submit"> load old offers </button> -->
 
                     <section id="offersloading"></section>
                 
-                    <script type="text/javascript" src="ajax.js"></script>
+                    <script type="text/javascript" src="../JS/ajax.js"></script>
 </body>
 
 </html>

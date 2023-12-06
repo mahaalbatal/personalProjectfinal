@@ -17,6 +17,10 @@
     margin-bottom: 30px;
     gap: 40px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .cart{
     position: relative;
     padding: 5px;
@@ -42,7 +46,12 @@
 .name{
     font-size: 14px;
 }
+.username{
+    display: flex;
+    font-size: 16px;
+    gap: 20px;
 
+}
 /* first bar style */
 .mainbar{
     display: flex;
@@ -199,21 +208,16 @@ input[type=date]{
     margin: 10px;
     gap: 10px;
 }
-.popularitem{
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+.popularitem{ 
     align-items: center; 
-
+    
 }
 .populardetails{
     display: flex;
     gap: 100px;
 } 
 .popularphoto{
-    /* display: flex;
-    align-items: center; */
-    width: 200px;
+    width: 400px;
     height: 220px;
     margin-top: 0px;
 }
@@ -221,16 +225,16 @@ input[type=date]{
     /* margin-left: 180px; */
     display: flex;
     font-size: 22px;
-    justify-content: left;
+    justify-content: center;
 }
-.photobackground{
-    /* display: flex;
-    align-items: center; */
+/* .photobackground{
+    display: flex;
+    align-items: center;
     width: 500px;
     height: 220px;
     background-color:  rgba(0, 0, 0, 0.3);
     border-radius: 7px;
-}
+} */
 .populardetails1{
     font-size: 20px;
 }

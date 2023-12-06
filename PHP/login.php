@@ -17,14 +17,15 @@ if ($row = $stmt->fetch()) {
     $_SESSION["customerId"] = $row['customerId'];
 	$_SESSION["username"] = $row['username'];
 	$_SESSION["loggedIn"] = true;
-    // Check the admin account, if the username is "MAHA" and the password is "MOCHA"
-    if ($username === "MAHA" && $password === "MOCHA") {
 
-    } elseif ($username === $username && $password === $password) {
+if ($username === $username && $password === $password) {
+    header('location:index.php');?>
+    
+<?php
 
     }else{
         
-        ?><p>Error<a href="LogIn.html">Try login again</p><?php
+        header('location:../incorrect-up.html');
     }
 }
 

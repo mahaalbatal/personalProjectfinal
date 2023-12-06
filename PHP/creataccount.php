@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 
 $name = $_POST["name"];
 $email = $_POST["email"];
@@ -18,10 +18,14 @@ $stmt = $pdo->prepare("INSERT INTO `customers` (`customerId`, `name`, `email`, `
 VALUES (NULL, '$name', '$email', '$username', '$password');");
 
 //execute
-if ($stmt->execute()) { ?>
-<h1>Added Successfully</h1>
-<a href="../LogIn.html">Log In></a>
-<button type="button"><a href="../LogIn.html"></a>Log In</button>
-<?php }  
+if ($stmt->execute());
+if ($stmt->rowCount() > 0) {  
+    $userId = $pdo->lastInsertId();
+    $_SESSION["customerId"] = $customerId;     
+    $_SESSION["username"] = $username;     
+    $_SESSION["loggedIn"] = true;     
+    header('Location: index.php');
+}
+
 ?>
 
