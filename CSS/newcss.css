@@ -131,3 +131,12 @@ body {
     border-radius: 10px; 
     gap:20px;
 }
+
+
+/* upload file */
+.upload{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

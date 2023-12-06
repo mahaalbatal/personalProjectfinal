@@ -15,7 +15,8 @@ $dbpassword = "";
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 //prepare
-$stmt = $pdo->prepare("UPDATE `events` SET `location` = '$location', `date` = '$date', `time` = '$time' WHERE `events`.`eventId` = $eventId;")
+$stmt = $pdo->prepare("UPDATE `events` SET `location` = '$location', `date` = '$date', `time` = '$time' 
+WHERE `events`.`eventId` = $eventId;")
 
 //execute
 if($stmt->execute()){
@@ -24,4 +25,4 @@ if($stmt->execute()){
 	?><p>Could not UPDATE the Event</p><?php
 }
 ?>
-<a href="events.php">view all Events</a>
+<a href="events.php">Back</a>

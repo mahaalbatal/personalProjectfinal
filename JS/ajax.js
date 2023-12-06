@@ -5,7 +5,7 @@ let xhr = new XMLHttpRequest();
 function getData(event){
 
 	xhr.onreadystatechange = handlerFunction; 
-	xhr.open("GET", "PHP/selectoffers.php", true); 
+	xhr.open("GET", "./PHP/selectoffers.php", true); 
 	xhr.send();
 }
 
@@ -26,29 +26,29 @@ function handlerFunction (event){
 			
 			for(let i=0; i<responseJSON.length; i++){
 
-				// let p = document.createElement("p");
-				// let pText = document.createTextNode(`${responseJSON[i].offerId}, 
-				// 	${responseJSON[i].start},
-				// 	${responseJSON[i].end},
-				// 	${responseJSON[i].offer}`)
+				let p = document.createElement("p");
+				let pText = document.createTextNode(`${responseJSON[i].offerId}, 
+					${responseJSON[i].start},
+					${responseJSON[i].end},
+					${responseJSON[i].offer}`)
 
-				// p.appendChild(pText);
-				// div.appendChild(p);
+				p.appendChild(pText);
+				div.appendChild(p);
 				
-				let input = document.createElement("input");
-                input.type = "text";
-                input.value = `${responseJSON[i].offerId}, 
-                                ${responseJSON[i].start},
-                                ${responseJSON[i].end},
-                                ${responseJSON[i].offer}`;
-                div.appendChild(input);
+				// let input = document.createElement("input");
+                // input.type = "text";
+                // input.value = `${responseJSON[i].offerId}, 
+                //                 ${responseJSON[i].start},
+                //                 ${responseJSON[i].end},
+                //                 ${responseJSON[i].offer}`;
+                // div.appendChild(input);
 
-				let editButton = document.createElement('button');
-				editButton.textContent= "edit";
-				div.append(editButton);
-				let deleteButton = document.createElement('button');
-				deleteButton.textContent= "delete";
-				div.append(deleteButton);
+				// let editButton = document.createElement('button');
+				// editButton.textContent= "edit";
+				// div.append(editButton);
+				// let deleteButton = document.createElement('button');
+				// deleteButton.textContent= "delete";
+				// div.append(deleteButton);
 				
 				// containerDiv.appendChild(div);
 			}

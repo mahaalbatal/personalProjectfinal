@@ -39,42 +39,42 @@ if (session_status() == PHP_SESSION_NONE) {
 <ul class="nav">
 
         <li>
-            <a href="index.html">
+            <a href="index.php">
                 <i class="bi bi-house-heart"></i>
                 <div class="name">Home</div>
             </a>
         </li>
 
         <li>
-            <a href="gallery.html">
+            <a href="../gallery.html">
             <i class="bi bi-images"></i>
             <div class="name">Gallery</div>
             </a>
         </li>
             
         <li>
-            <a href="offers.php">
+            <a href="../offersform.html">
             <i class="bi bi-gift"></i>
             <div class="name">Offers</div>
             </a>
         </li>
                 
-        <li>
+        <!-- <li>
             <a href="offersform.html">
             <i class="bi bi-emoji-smile"></i>
             <div class="name">Reviews</div>
             </a>
-        </li>
+        </li> -->
             
         <li>
-            <a href="offersform.html">
+            <a href="events.php">
             <i class="bi bi-calendar-event"></i>
             <div class="name">Events</div>
             </a>
         </li>
             
         <li>
-            <a href="offersform.html">
+            <a href="profile.php">
             <i class="bi bi-person-circle"></i>
             <div class="name">Profile</div>
             </a>
@@ -83,7 +83,7 @@ if (session_status() == PHP_SESSION_NONE) {
     
     </ul>
     <ul>
-        <a href="cart.html">
+        <a href="../cart.html">
             <li class="cart">
                 <i class="bi bi-cart3"></i>
                 <div id="cartAmount" class="cartamount">0</div>

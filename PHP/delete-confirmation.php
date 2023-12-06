@@ -32,8 +32,8 @@ $row = $stmt->fetch();
 
 </div>
 
-<button><a href="events.php">No</a></button>
-<form action="delete.php" method="POST">
+<button><a href="../events.php">No</a></button>
+<form action="../delete-events.php" method="POST">
 	<input type="hidden" name="eventId" value="<?= $row["eventId"] ?>">
 	<input type="submit" value="Yes">
 </form>

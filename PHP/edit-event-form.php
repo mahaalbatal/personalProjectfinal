@@ -9,7 +9,7 @@
     $pdo = new PDO($dsn, $dbusername, $dbpassword);
     
     //prepare
-    $stmt = $pdo->prepare("SELECT * FROM `events`;");
+    $stmt = $pdo->prepare("SELECT * FROM `events` WHERE `events`.`eventId` = $eventId;");
     
     //execute
     $stmt->execute();

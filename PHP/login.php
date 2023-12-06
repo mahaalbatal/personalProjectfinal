@@ -14,19 +14,26 @@ $stmt = $pdo->prepare("SELECT `customerId`, `username`
 $stmt->execute();
 
 if ($row = $stmt->fetch()) {
+
+
+
+if ($username === $username && $password === $password) {
+
     $_SESSION["customerId"] = $row['customerId'];
 	$_SESSION["username"] = $row['username'];
 	$_SESSION["loggedIn"] = true;
 
-if ($username === $username && $password === $password) {
-    header('location:index.php');?>
+    header('location:index.php');
     
-<?php
 
-    }else{
-        
-        header('location:../incorrect-up.html');
-    }
+
+    } 
 }
+    
+else{
+        
+    header('location:../incorrect-up.html');
+}
+
 
     ?>

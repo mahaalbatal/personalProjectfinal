@@ -19,8 +19,8 @@
     ?><ul><?php
     while($row = $stmt->fetch()) {     
         ?><li><?=$row["eventId"] ?> <?=$row["location"] ?> <?=$row["date"] ?> <?=$row["time"] ?>
-        <button><a href="edit-event-form.php/?id=<?=$row["eventId"]?>">Edit Event</a></button>
-        <button><a href="delete-confirmation.php/?id=<?=$row["eventId"]?>">Delete Event</a></button>
+        <button><a href="edit-event-form.php/?eventId=<?=$row["eventId"]?>">Edit Event</a></button>
+        <button><a href="delete-confirmation.php/?eventId=<?=$row["eventId"]?>">Delete Event</a></button>
         </li><?php
     }
     ?></ul><?php
