@@ -1,25 +1,25 @@
 <?php
-    $eventId = $_GET["eventId"];
+$eventId = $_GET["eventId"];
 
-    $dsn = "mysql:host=localhost;dbname=sanbites;charset=utf8mb4";
-    $dbusername = "root";  
-    $dbpassword = "";
-    
+$dsn = "mysql:host=localhost;dbname=sanbites;charset=utf8mb4";
+$dbusername = "root";  
+$dbpassword = "";
+
     //connect
-    $pdo = new PDO($dsn, $dbusername, $dbpassword);
-    
+$pdo = new PDO($dsn, $dbusername, $dbpassword);
+
     //prepare
     $stmt = $pdo->prepare("SELECT * FROM `events` WHERE `events`.`eventId` = $eventId;");
-    
-    //execute
-    $stmt->execute();
 
-    $row = $stmt->fetch();
+    //execute
+$stmt->execute();
+
+$row = $stmt->fetch();
 
 ?>
 
 
-<form class="offers" action="update-events.php" method="POST">
+<form class="offers" action="../update-events.php" method="POST">
 
 <div class="offers1">
         <input type="hidden" name="eventId" value="<?= $row["eventId"] ?>">

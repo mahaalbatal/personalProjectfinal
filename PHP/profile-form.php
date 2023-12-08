@@ -2,24 +2,24 @@
 session_start();
 
 
-    // $customerId = $_GET["customerId"];
+    $customerId = $_GET["customerId"];
 
-    // $dsn = "mysql:host=localhost;dbname=sanbites;charset=utf8mb4";
-    // $dbusername = "root";  
-    // $dbpassword = "";
+    $dsn = "mysql:host=localhost;dbname=sanbites;charset=utf8mb4";
+    $dbusername = "root";  
+    $dbpassword = "";
     
 
-//     $pdo = new PDO($dsn, $dbusername, $dbpassword);
+    $pdo = new PDO($dsn, $dbusername, $dbpassword);
     
 
-//     $stmt = $pdo->prepare("SELECT * FROM `customers` WHERE `customers`.`customerId` = $customerId;");
+    $stmt = $pdo->prepare("SELECT * FROM `customers` WHERE `customers`.`customerId` = $customerId;");
     
 
-//     $stmt->execute();
+    $stmt->execute();
 
-//     $row = $stmt->fetch();
+    $row = $stmt->fetch();
 
-// ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -18,7 +18,9 @@
                         <img width="190" height="185" src="../images/chocolate.png" alt="">
                         <div class="chocolate">
                                 <p>Chocolate</p>
+                                    <a href="chocolate.php">
                                     <i class="bi bi-arrow-left-circle-fill"></i>
+                                    </a>
                                 </div>
                         </article>
         
@@ -26,13 +28,15 @@
                             <img width="190" height="185" src="../images/honey.png" alt="">
                             <div class="chocolate">
                                     <p>Eastern Sweets</p>
+                                        <a href="eastern-sweet.php">
                                         <i class="bi bi-arrow-right-circle-fill"></i>
+                                        </a>
                                     </div>
                             </article>
                     </main>
 
 
-                    
+
 
 
 

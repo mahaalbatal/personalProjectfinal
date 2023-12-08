@@ -5,7 +5,7 @@ let xhr = new XMLHttpRequest();
 function getData(event){
 
 	xhr.onreadystatechange = handlerFunction; 
-	xhr.open("GET", "./PHP/selectoffers.php", true); 
+	xhr.open("GET", "selectoffers.php", true); 
 	xhr.send();
 }
 

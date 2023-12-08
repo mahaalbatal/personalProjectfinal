@@ -25,8 +25,6 @@ if (session_status() == PHP_SESSION_NONE) {
                 } else {
                     echo'<a href="../LogIn.html">Log In</a>'; 
                 }?>
-                
-
 </div>
 
 </header>
@@ -53,7 +51,7 @@ if (session_status() == PHP_SESSION_NONE) {
         </li>
             
         <li>
-            <a href="../offersform.html">
+            <a href="offersform.php">
             <i class="bi bi-gift"></i>
             <div class="name">Offers</div>
             </a>
@@ -74,7 +72,7 @@ if (session_status() == PHP_SESSION_NONE) {
         </li>
             
         <li>
-            <a href="profile.php">
+            <a href="profile-form.php">
             <i class="bi bi-person-circle"></i>
             <div class="name">Profile</div>
             </a>

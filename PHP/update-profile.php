@@ -1,6 +1,5 @@
 <?php
 
-//Update the article
 $customerId  = $_POST["customerId "];
 $name = $_POST["name"];
 $email = $_POST["email"];
