@@ -194,53 +194,55 @@ input[type=date]{
 }
 .types{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: 300px;
+    align-items: center;
+    gap: 10px;
+}
+.allItems{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
 }
 .popular{
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: beige;
-    height: 300px;
+    height: 310px;
     width: 800px;
     margin: 10px;
-    gap: 10px;
+    border-radius: 15px;
 }
 .popularitem{ 
-    align-items: center; 
-    
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    gap: 20px;
 }
 .populardetails{
     display: flex;
-    gap: 100px;
+    justify-content: center;
+    gap: 150px;
 } 
 .popularphoto{
     width: 400px;
     height: 220px;
-    margin-top: 0px;
-}
+} 
 .populartitle{
-    /* margin-left: 180px; */
     display: flex;
+    justify-content: left;
     font-size: 22px;
-    justify-content: center;
 }
-/* .photobackground{
-    display: flex;
-    align-items: center;
-    width: 500px;
-    height: 220px;
-    background-color:  rgba(0, 0, 0, 0.3);
-    border-radius: 7px;
-} */
+
 .populardetails1{
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 .populardetails2{
     font-size: 14px;
-    color: gray;
+    color: rgb(115, 115, 115);
 } 
 
 /* eastern sweet style  */
@@ -331,7 +333,8 @@ input[type=date]{
     color: white;
     cursor: pointer;
     margin-top: 10px;
-
+    width: 120px;
+    height: 40px;
 }
 .bi-x-circle{
     color: red;
@@ -344,12 +347,12 @@ input[type=date]{
     gap: 15px;
 }
 .cart-item{
-    border: 2px solid #f74e0c;
+    border: 2px solid black;
     border-radius: 5px;
     display: flex;
 }
 .title-price-x{
-    width: 200px;
+    width: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;

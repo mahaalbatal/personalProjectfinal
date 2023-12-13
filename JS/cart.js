@@ -25,7 +25,7 @@ let generateCartItems = () => {
                     <div class="title-price-x">
                             <h4 class="title-price">
                                 <p>${search.name1}</p>
-                                <p class="cart-item-price">${search.price}</p>
+                                <p class="cart-item-price">$ ${search.price}</p>
                             </h4>
                             <i onclick="removeItem(${id})" class="bi bi-x-circle"></i>
                     </div>
@@ -47,9 +47,6 @@ let generateCartItems = () => {
             ShoppingCart.innerHTML = ``;
             label.innerHTML = `
             <h2>Cart is Empty</h2>
-            <a href="PHP/index.php">
-            <button class="HomeBtn">Back to home</button>
-            </a>
             `;
     }
 };

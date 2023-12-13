@@ -5,16 +5,16 @@ session_start();
     $dbusername = "root";  
     $dbpassword = "";
     
-    //connect
+
     $pdo = new PDO($dsn, $dbusername, $dbpassword);
     
-    //prepare
+
     $stmt = $pdo->prepare("SELECT * FROM `events`;");
     
-    //execute
+
     $stmt->execute();
     
-    //process results
+
 
     ?> <!DOCTYPE html>
     <html lang="en">

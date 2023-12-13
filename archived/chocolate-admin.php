@@ -17,18 +17,31 @@ session_start();
                 <main class="image-container">
                         <section class="image-container-items">
                                 <img src="../images/IMG-20220609-WA0065.jpg" alt="Image1">
+                                <?php if ($_SESSION['role'] == "admin"){
+                                        ?> <input type="file" name="image">
+                                        <input type="submit" name="submit" value="Upload"> <?php } ?>
                         </section>
                         
                         <section class="image-container-items">
                                 <img src="../images/IMG-20220608-WA0041.jpg"  alt="Image2">
+                                <?php if ($_SESSION['role'] == "admin"){
+                                        ?> <input type="file" name="image2">
+                                        <input type="submit" name="submit" value="Upload"> <?php } ?>
                         </section>
                         
                         <section class="image-container-items">
                                 <img src="../images/IMG-20220607-WA0145.jpg"  alt="Image3">
+
+                                <?php if ($_SESSION['role'] == "admin"){
+                                        ?> <input type="file" name="image3">
+                                        <input type="submit" name="submit" value="Upload"> <?php } ?>
                         </section>
 
                         <section class="image-container-items">
                                 <img src="../images/IMG-20220607-WA0090.jpg"  alt="Image4">
+                                <?php if ($_SESSION['role'] == "admin"){
+                                        ?> <input type="file" name="image4">
+                                        <input type="submit" name="submit" value="Upload"> <?php } ?>
                         </section>
 
                 </main>

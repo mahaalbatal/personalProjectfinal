@@ -24,7 +24,7 @@
                 <textarea name="offer" class="textarea" rows="5" placeholder="write your offer here"></textarea> -->
                 <button class="add" type="submit"> Add </button>
         
-        </div>
+        <!-- </div> -->
         
         
         </form>

@@ -8,17 +8,17 @@ $dsn = "mysql:host=localhost;dbname=sanbites;charset=utf8mb4";
 $dbusername = "root";  
 $dbpassword = "";
 
-//connect
+
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
-//prepare
+
 $stmt = $pdo->prepare("SELECT * FROM `events` 
 	WHERE `events`.`eventId` = $eventId;");
 
-//execute
+
 $stmt->execute();
 
-//process results
+
 $row = $stmt->fetch();
 
 

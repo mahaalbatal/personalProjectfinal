@@ -16,8 +16,7 @@ $stmt->execute();
 if ($row = $stmt->fetch()) {
 
     if ($username === $username && $password === $password) {
-// if ($username === $username && $password === $password && $row['role'] === 'admin') {
-    // if ($row['role'] === 'admin') {
+
 
     $_SESSION["customerId"] = $row['customerId'];
 	$_SESSION["username"] = $row['username'];
@@ -26,15 +25,7 @@ if ($row = $stmt->fetch()) {
 
     header('location:index.php');
 
-    // if ($row['role'] === 'customer') {
-    //     $_SESSION["customerId"] = $row['customerId'];
-    //     $_SESSION["username"] = $row['username'];
-    //     $_SESSION["loggedIn"] = true;
-    
-    //     header('location:test.php');
 
-
-    // } 
 } 
     
 }else{

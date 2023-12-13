@@ -37,7 +37,6 @@ if ($_SESSION['role'] == "admin"){
 
                         <button id="loadoffers" class="oldoffers" type="submit" >Load Offers</button>
 
-                        <!-- <button id="loadoffers" class="oldoffers" type="submit"> load old offers </button> -->
 
                         <section id="offersloading"></section>
                 
@@ -45,4 +44,3 @@ if ($_SESSION['role'] == "admin"){
 </body>
 
 </html>
-<!-- <a href="index.html"></a> -->

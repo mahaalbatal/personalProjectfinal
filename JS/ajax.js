@@ -21,7 +21,7 @@ function handlerFunction (event){
 			console.log(responseJSON);
 			document.querySelector("#offersloading").innerHTML="";
 		
-			// let containerDiv = document.createElement("div");
+		
 			let div = document.createElement("div");
 			
 			for(let i=0; i<responseJSON.length; i++){
@@ -34,29 +34,11 @@ function handlerFunction (event){
 
 				p.appendChild(pText);
 				div.appendChild(p);
-				
-				// let input = document.createElement("input");
-                // input.type = "text";
-                // input.value = `${responseJSON[i].offerId}, 
-                //                 ${responseJSON[i].start},
-                //                 ${responseJSON[i].end},
-                //                 ${responseJSON[i].offer}`;
-                // div.appendChild(input);
 
-				// let editButton = document.createElement('button');
-				// editButton.textContent= "edit";
-				// div.append(editButton);
-				// let deleteButton = document.createElement('button');
-				// deleteButton.textContent= "delete";
-				// div.append(deleteButton);
-				
-				// containerDiv.appendChild(div);
 			}
 
 			document.querySelector("#offersloading").appendChild(div);
 		
-		} else {
-			//status code error
-		}
+		} 
 	}
 };

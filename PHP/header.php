@@ -71,12 +71,12 @@ if (session_status() == PHP_SESSION_NONE) {
             </a>
         </li>
             
-        <li>
+        <!-- <li>
             <a href="profile-form.php">
             <i class="bi bi-person-circle"></i>
             <div class="name">Profile</div>
             </a>
-        </li>
+        </li> -->
         
     
     </ul>
